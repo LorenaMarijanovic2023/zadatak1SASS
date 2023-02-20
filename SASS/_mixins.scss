@@ -1,0 +1,7 @@
+@mixin text ($razmak, $background-color) {
+  padding: $razmak;
+  background-color: $background-color;
+}
+
+
+

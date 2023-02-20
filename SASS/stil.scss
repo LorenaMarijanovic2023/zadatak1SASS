@@ -1,0 +1,51 @@
+@import "_boje.scss";
+@import "_razmak.scss";
+@import "_mixins.scss";
+@import "bourbon";
+
+body {
+  margin: 0;
+  padding: 0;
+  @include overflow-wrap;
+}
+
+.vrh {
+  background-color: $zuta;
+  ul {
+    padding: $razmak3;
+    margin: 0;
+    li {
+      display: inline;
+      word-spacing: $razmak15;
+      a {
+        text-decoration: none;
+        font-size: $razmak2;
+        color: $crvena;
+        &:hover {
+          color: $crna;
+        }
+      }
+    }
+  }
+}
+
+.sredina {
+  @include text($razmak3, $zelena);
+  margin: 0em;
+  height: $razmak100/$razmak2;
+  color: $bijela;
+  font-size: $razmak2;
+}
+
+.dno {
+  @include text($razmak3, $crvena);
+  .probaimport {
+    height: $razmak3;
+    text-decoration: none;
+    color: $bijela;
+  }
+  a {
+    @extend .probaimport;
+    color: $crna;
+  }
+}
